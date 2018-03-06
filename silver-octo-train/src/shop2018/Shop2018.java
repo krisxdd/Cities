@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package shop2018;
 
-/**
- *
- * @author Student
- */
 public class Shop2018 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Koszyk k = new Koszyk();
+        Produkt chleb = new Produkt("chleb", 2.2);
+        Produkt maslo = new Produkt("maslo", 4.72);
+        Produkt maka = new Produkt("maka", 1.5);
+        k.dodaj(chleb);
+        k.dodaj(maslo);
+        k.dodaj(maka);
+        System.out.println(k.doZaplaty());
     }
     
 }
