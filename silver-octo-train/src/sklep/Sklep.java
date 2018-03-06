@@ -10,6 +10,9 @@ public class Sklep {
         Produkt maslo = new Produkt("maslo", BigDecimal.valueOf(4.72));
         Produkt maka = new Produkt("maka", BigDecimal.valueOf(1.5));
         k.dodaj(chleb);
+        k.dodaj(chleb);
+        k.dodaj(chleb);
+        k.dodaj(maslo);
         k.dodaj(maslo);
         k.dodaj(maka);
         System.out.println(k.doZaplaty());
