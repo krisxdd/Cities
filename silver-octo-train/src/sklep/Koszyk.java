@@ -35,6 +35,7 @@ public class Koszyk {
              s.append(p.getCena().multiply(BigDecimal.valueOf(integ)));
              s.append("\n");
         }
+        s.append("Razem do zaplaty: ");
         s.append(doZaplaty());
         return s.toString();
     }
